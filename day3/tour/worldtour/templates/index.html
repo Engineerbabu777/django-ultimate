@@ -1,28 +1,32 @@
+{% load static %}
+
 <!DOCTYPE html>
 
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Asia Tours</title>
+        <title>Django is awsome</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
     </head>
     <body>
 
-        <h1>Asia Tour </h1>
-
-        {% for tour in tours  %}
-        
-        <p>{{ tour.origin_country }}</p>
-        <p>{{ tour.price }}</p>
-        <p>{{ tour.destination_country }}</p>
-        
-        {% endfor %}
-
+        <h1>Hello World</h1>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+        <p>This is a third paragraph</p>
+        <p>This is a fourth paragraph</p>
+        <p>This is a fifth paragraph</p>
+        <p>This is a sixth paragraph</p>
+        <p>This is a seventh paragraph</p>
+        <p>This is a eighth paragraph</p>
+        <p>This is a ninth paragraph</p>
        
-        
-        <script src="" async defer></script>
+        <script src="{% static 'js/script.js' %}" async defer></script>
+        <img src="{% static 'images/logo.png' %}" alt="Sdsd"/>
+
     </body>
 </html>
