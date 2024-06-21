@@ -22,4 +22,4 @@ def contact_view(request):
 
 
 def contact_success_view(request):
-    return render(request,'contact-success.html')
+    return render(request,'contact_success.html')
