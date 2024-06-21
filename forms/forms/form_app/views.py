@@ -14,9 +14,12 @@ def contact_view(request):
         if form.is_valid():
             form.send_email()
             # form.save()
-            return redirect('contact')
+            return redirect('contact-success')
             # return render(request,'contact.html',{'form':ContactForm()})
     else:
         form = ContactForm()
-    
     return render(request,'contact.html',{'form':form})
+
+
+def contact_success_view(request):
+    return render(request,'contact-success.html')
